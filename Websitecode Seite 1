@@ -13,7 +13,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #efefef;
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -25,21 +25,22 @@
             color: #fff;
             text-align: center;
             font-family:'Times New Roman';
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
         }
 
         footer a {
             color: #000;
             text-decoration: none;
-            margin: 0 6%;
-            font-size: 170%;
+            margin: 0 5vw;
+            font-size: 2vw;
         }
 
         nav {
-            background-color: #fff;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            background-color: #f8f8f8;
+            color: #fff;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -51,7 +52,7 @@
             color: #000;
             text-decoration: none;
             margin: 0 4%;
-            font-size: 170%;
+            font-size: 2vw;
         }
 
         section {
@@ -62,20 +63,28 @@
         h2 {
             color: #333;
             font-family:'Times New Roman';
-            font-size: ;
+            font-size: 4vw;
+            text-decoration: none;
+            padding-left: 10vw;
         }
 
         p {
             line-height: 1.6;
             color: #333;
             font-family:'Times New Roman';
+            font-size: 2vw;
+            padding-left: 10vw;
+            padding-right: 10vw;
         }
 
         table,td {
             padding: 25px;
+            padding-left: 10vw;
+            padding-right: 10vw;
             line-height: 1.6;
             color: #333;
             font-family:'Times New Roman';
+            font-size: 2vw;
         }
 
         .gallery {
@@ -83,6 +92,8 @@
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
+            padding-left: 10vw;
+            padding-right: 10vw;
         }
 
         .gallery img {
@@ -90,16 +101,14 @@
             height: auto;
             border-radius: 8px;
         }
-
-
     </style>
 </head>
 <body>
-    
+
     <nav>
         <a href="#about">Über mich</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#Top" style="font-weight: bold; font-size: 270%;" >Paul Eichler</a>
+        <a href="#Top" style="font-weight: bold; font-size: 3vw;" >Paul Eichler</a>
         <a href="#contact">Kontakt</a>
         <a href="#Bewerbung">Bewerbung</a>
     </nav>
@@ -118,11 +127,15 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="gallery">
-            <!-- Include your images here -->
-            <img src="image1.jpg" alt="Photo 1">
-            <img src="image2.jpg" alt="Photo 2">
-            <img src="image3.jpg" alt="Photo 3">
-            <!-- Add more images as needed -->
+            <a href="Website Seite 2.html">
+                <img src="image1.jpg" alt="Auto" style="width: 42px;height: 42px;">
+            </a>
+            <a href="Website Seite 3.html">
+                <img src="image2.jpg" alt="Veranstaltung" style="width: 42px;height: 42px;">
+            </a>
+            <a href="Website Seite 4.html">
+                <img src="image3.jpg" alt="Portrait" style="width: 42px;height: 42px;">
+            </a>
         </div>
     </section>
 
@@ -135,10 +148,17 @@
         <p>Phone: (123) 456-7890</p>
     </section>
 
+    <section id="Bewerbung">
+        <h2>Bewerbung</h2>
+        <p>
+            Wenn dich meine Arbeit interessiert und du Lust auf eine Praktikum oder eine Zusammenarbeit hast kannst du dich gerne über das Formular auf dieser Seite Bewerben.
+        </p>
+    </section>
+
     <footer>
         <a href="#about">Über mich</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#Top" style="font-weight: bold; font-size: 270%;" >PE</a>
+        <a href="#Top" style="font-weight: bold; font-size: 3vw;" >PE</a>
         <a href="#contact">Kontakt</a>
         <a href="#Bewerbung">Bewerbung</a>
     </footer>
