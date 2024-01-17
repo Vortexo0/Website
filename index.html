@@ -101,7 +101,7 @@
             height: auto;
             border-radius: 8px;
         }
-        button {
+        input {
             border-style: solid;
             border-color: #4b4545;
             border-width: 3px;
@@ -112,6 +112,19 @@
             margin-bottom: 10px;
             text-align: center;
         }
+        .submit {
+            background-color:#4b4545;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px #999;
+            border: none;
+   
+        }
+
+        .submit:hover {
+            background-color: #312727;
+        }
+
     </style>
 </head>
 <body>
@@ -165,7 +178,9 @@
         <p>
             Wenn dich meine Arbeit interessiert und du Lust auf eine Praktikum oder eine Zusammenarbeit hast kannst du dich gerne über das Formular auf dieser Seite Bewerben.
         </p>
-        <button type="button" style="margin:4vw 10vw;"><a href="bewerbung.html">Jetzt bewerben</a></button>
+        <form action="./bewerbung.html">
+            <input style="margin:4vw 10vw;" class="submit" type="submit" id="bewerben" name="bewerben" value="Jetzt Bewerben">
+        </form>
     </section>
 
     <footer>
