@@ -75,7 +75,8 @@
             padding-left: 10vw;
             padding-right: 10vw;
         }
-        form {
+
+        input,select,textarea {
             border-style: solid;
             border-color: #4b4545;
             border-width: 3px;
@@ -100,25 +101,25 @@
 
     <section id="formular">
         <h2>Bewerbung</h2>
-        <div class="formular">
+        <div class="formular" style="padding-left: 10vw; padding-right: 10vw;">
             <body>
                 <div>
                     <form>
-                        <input type="radio" id="herr" name="anrede" value="Herr">
-                        <label for="herr">Herr</label><br>
-                        <input type="radio" id="frau" name="anrede" value="Frau">
-                        <label for="frau">Frau</label><br>
+                        <select id="anrede" name="anrede" aria-placeholder="Anrede">
+                            <option value="Herr">Herr</option>
+                            <option value="Frau">Frau</option>
+                            <option value="Keine">Keine</option>
+                        </select><br>
                     </form>
                     <form>
-                        <label for="vorname">Vorname</label><br>
-                        <input type="text" id="vorname" name="vorname" required><br>
-                        <label for="nachname">Nachname</label><br>
-                        <input type="text" id="nachname" name="nachname" required><br>
-                        <label for="email">E-Mail</label><br>
-                        <input type="text" id="email" name="email" required><br>
-                        <label for="telefon">Telefonnumer (optional)</label><br>
-                        <input type="text" id="telefon" name="telefon"><br>
+                        <input type="text" id="vorname" name="vorname" placeholder="Vorname" required><br>
+                        <input type="text" id="nachname" name="nachname" required placeholder="Nachname"><br>
+                        <input type="email" id="email" name="email" required placeholder="E-Mail"><br>
+                        <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer (optional)"><br>
+                        <input style="height: 60px;" type="file" id="anschreiben" name="anschreiben" placeholder="Anschreiben hochladen"><br>
+                        <textarea style="height: 40vh; width: 80vw; text-align: left; padding: 8px;" rows="5" cols="30" type="text" id="hAnschreiben" name="hAnschreiben" placeholder="Sie können hier Ihr Bewerbungsanschreiben einfügen"></textarea><br>
                         <input class="submit" type="submit" id="fertig" name="fertig" value="Fertig">
+                        
                     </form>
             </body>
         </div>
