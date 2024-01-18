@@ -107,7 +107,7 @@
 
     <nav>
         <a href="#about">Über mich</a>
-        <a href="index.html/#portfolio">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="index.html" style="font-weight: bold; font-size: 3vw;" >Paul Eichler</a>
         <a href="#contact">Kontakt</a>
         <a href="#Bewerbung">Bewerbung</a>
@@ -118,14 +118,12 @@
         <div class="formular" style="padding-left: 10vw; padding-right: 10vw;">
             <body>
                 <div>
-                    <form>
+                    <form action="./bewerbung_abgeschickt.html">
                         <select id="anrede" name="anrede" aria-placeholder="Anrede">
                             <option value="Herr">Herr</option>
                             <option value="Frau">Frau</option>
                             <option value="Keine">Keine</option>
                         </select><br>
-                    </form>
-                    <form>
                         <input type="text" id="vorname" name="vorname" placeholder="Vorname" required><br>
                         <input type="text" id="nachname" name="nachname" required placeholder="Nachname"><br>
                         <input type="email" id="email" name="email" required placeholder="E-Mail"><br>
@@ -133,7 +131,6 @@
                         <input style="height: 60px;" type="file" id="anschreiben" name="anschreiben" placeholder="Anschreiben hochladen"><br>
                         <textarea style="height: 40vh; width: 80vw; text-align: left; padding: 8px;" rows="5" cols="30" type="text" id="hAnschreiben" name="hAnschreiben" placeholder="Sie können hier Ihr Bewerbungsanschreiben einfügen"></textarea><br>
                         <input class="submit" type="submit" id="fertig" name="fertig" value="Fertig">
-                        
                     </form>
             </body>
         </div>
