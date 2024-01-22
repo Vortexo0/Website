@@ -6,7 +6,16 @@ $dbname = "Bewerbung";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "INSERT INTO `Bewerbung` (anrede, vorname, nachname, email, telefon, anschreiben) VALUES ('" . $_POST['anrede'] . "','" . $_POST['vorname'] . "', '" . $_POST['nachname'] . "','" . $_POST['email'] . "','" . $_POST['telefon'] . "','" . $_POST['hAnschreiben'] . "')";
+$stmt = $conn->prepare("INSERT INTO `bewerbung` (anrede, vorname, nachname, email, telefon, anschreiben) VALUES (?, ?, ?, ?, ?, ?, '1')");
+$stmt->bind_param("ssssss", $_POST['anrede'], $_POST['vorname'], $_POST['nachname'], $_POST['email'], $_POST['telefon'], $_POST['hAnschreiben']);
+
+if ($stmt->execute()) {
+    echo "Daten erfolgreich eingefügt.";
+} else {
+    echo "Fehler beim Einfügen der Daten: " . $stmt->error;
+}
+
+$stmt->close();
 
 ?>
 <!DOCTYPE html>
