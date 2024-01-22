@@ -118,8 +118,8 @@
         <div class="formular" style="padding-left: 10vw; padding-right: 10vw;">
             <body>
                 <div>
-                    <form action="./bewerbung_abgeschickt.html">
-                        <select id="anrede" name="anrede" aria-placeholder="Anrede">
+                    <form action="./bewerbung_abgeschickt.php" method="POST">
+                        <select id="anrede" name="anrede">
                             <option value="Herr">Herr</option>
                             <option value="Frau">Frau</option>
                             <option value="Keine">Keine</option>
@@ -128,7 +128,7 @@
                         <input type="text" id="nachname" name="nachname" required placeholder="Nachname"><br>
                         <input type="email" id="email" name="email" required placeholder="E-Mail"><br>
                         <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer (optional)"><br>
-                        <input style="height: 60px;" type="file" id="anschreiben" name="anschreiben" placeholder="Anschreiben hochladen"><br>
+                        <!--<input style="height: 60px;" type="file" id="anschreiben" name="anschreiben" placeholder="Anschreiben hochladen"><br>-->
                         <textarea style="height: 40vh; width: 80vw; text-align: left; padding: 8px;" rows="5" cols="30" type="text" id="hAnschreiben" name="hAnschreiben" placeholder="Sie können hier Ihr Bewerbungsanschreiben einfügen"></textarea><br>
                         <input class="submit" type="submit" id="fertig" name="fertig" value="Fertig">
                     </form>
