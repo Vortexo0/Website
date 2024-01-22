@@ -7,7 +7,11 @@ $dbname = "Bewerbung";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $sql = "INSERT INTO `Bewerbung` (anrede, vorname, nachname, email, telefon, anschreiben) VALUES ('" . $_POST['anrede'] . "','" . $_POST['vorname'] . "', '" . $_POST['nachname'] . "','" . $_POST['email'] . "','" . $_POST['telefon'] . "','" . $_POST['hAnschreiben'] . "')";
-
+if (mysqli_query($conn, $sql)) {
+    echo "Daten erfolgreich übermittelt";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
